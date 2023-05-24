@@ -5,18 +5,18 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
-    NavMeshAgent agent;
-    [SerializeField] Transform movePositionTransform;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        agent = GetComponent<NavMeshAgent>();
-    }
+	NavMeshAgent agent;
+	[SerializeField] Transform movePositionTransform;
 
-    // Update is called once per frame
-    void Update()
-    {
-        agent.destination = movePositionTransform.position;
-    }
+	// Start is called before the first frame update
+	void Start()
+	{
+		agent = GetComponent<NavMeshAgent>();
+	}
+
+	// Update is called once per frame
+	void Update()
+	{
+		agent.destination = movePositionTransform.position;
+	}
 }
